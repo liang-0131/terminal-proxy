@@ -19,4 +19,6 @@
   - curl cip.cc
 ---
 #### MAC
-
+---
+#### Linux
+- 安装[proxychains4](https://github.com/rofl0r/proxychains-ng)
