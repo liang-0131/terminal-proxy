@@ -26,6 +26,15 @@
   - curl cip.cc
 ---
 #### MAC
+- 在`~/.bash_profile`或`~/.zshrc`中添加
+```bash
+# clashx默认3协议都是7890端口
+# 终端代理
+ export http_proxy=http://127.0.0.1:7890
+ export https_proxy=$http_proxy
+ # 生效
+ source .zshrc or source .bash_profile
+```
 ---
 #### Linux
 - 安装[proxychains4](https://github.com/rofl0r/proxychains-ng)
