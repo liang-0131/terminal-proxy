@@ -16,8 +16,8 @@
 
 - 安装[脚本](https://github.com/liang-0131/wsl2proxy/blob/master/README-zh.md)
 - 设置
-  - 协议：socks5
-  - 端口：7890（ V2rayN 默认10808） 
+  - 协议：http
+  - 端口：7891（ V2rayN 默认10809） 
   - <img src="https://user-images.githubusercontent.com/32185381/149701826-24401f7d-de82-4ffd-a8d8-a0648c845eff.png" width="300">
 - 测试是否成功
   - curl www.google.com
