@@ -12,7 +12,9 @@
   # 直接放开 `vEthernet (WSL)` 这张网卡的防火墙  
     New-NetFirewallRule -DisplayName "WSL" -Direction Inbound -InterfaceAlias "vEthernet (WSL)" -Action Allow
   ```
-  - ⚡如果实在无效就关闭防火墙
+  - ⚡如果实在无效就关闭防火墙试试能不能通过
+    - 如通过且不想关闭防火墙：
+    - `高级设置`-->`入站规则`-->`新建规则`-->`端口`-->`TCP`-->`特定端口：<你的v2rayN的http端口>`-->`允许连接`-->`3个全选`-->`名称、描述自定`
 
 - 安装[脚本](https://github.com/liang-0131/wsl2proxy/blob/master/README-zh.md)
 - 设置
