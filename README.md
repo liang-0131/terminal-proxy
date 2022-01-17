@@ -4,9 +4,14 @@
 #### WSL2
 - 条件
   - V2rayN中开启`允许来自局域网的连接`    
-  - <img src="https://user-images.githubusercontent.com/32185381/149700844-b2cafe75-1180-4158-8b81-fef0521d78b0.png" width="450">  
+  - <img src="https://user-images.githubusercontent.com/32185381/149700844-b2cafe75-1180-4158-8b81-fef0521d78b0.png" width="450"> 
   - `Windows Defender 防火墙`-->`允许的应用`-->左1右2勾选放行V2rayN   
   - <img src="https://user-images.githubusercontent.com/32185381/149701357-47b954c0-eb44-4d45-970c-44b0ddaa6ce0.png" width="450"> 
+  - 管理员运行powershell放行wsl2网卡
+  ```bash
+  # 直接放开 `vEthernet (WSL)` 这张网卡的防火墙  
+    New-NetFirewallRule -DisplayName "WSL" -Direction Inbound -InterfaceAlias "vEthernet (WSL)" -Action Allow
+  ```
   - ⚡如果实在无效就关闭防火墙
 
 - 安装[脚本](https://github.com/liang-0131/wsl2proxy/blob/master/README-zh.md)
