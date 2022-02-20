@@ -39,6 +39,6 @@
 ```
 ---
 #### Linux
-- 同mac
+- 同mac yunxingyici  
 或
 - 安装[proxychains4](https://github.com/rofl0r/proxychains-ng)
